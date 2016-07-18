@@ -1,0 +1,34 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  UIColor+Extensions.m
+//  PetCity
+//
+//  Created by Gregory Maksyuk on 3/14/13.
+//  Copyright 2013 Catalyst Apps. All rights reserved.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Imports
+
+#import "UIColor+Extensions.h"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Implementation
+
+@implementation UIColor (Extensions)
+
++ (UIColor *)colorWithHex:(NSUInteger)aHexColor andAlpha:(CGFloat)anAlpha
+{
+    return [[[self class] alloc] initWithHex:aHexColor andAlpha:anAlpha];
+}
+
+- (id)initWithHex:(NSUInteger)aHexColor andAlpha:(CGFloat)anAlpha
+{
+    return [self initWithRed:((CGFloat)((aHexColor & 0xFF0000) >> 16)) / 255.0
+                       green:((CGFloat)((aHexColor & 0xFF00) >> 8)) / 255.0
+                        blue:((CGFloat)(aHexColor & 0xFF)) / 255.0
+                       alpha:anAlpha];
+}
+
+@end

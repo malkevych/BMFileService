@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E64a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="naV-F7-MIk" customClass="SIApplicationsSheet">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-V6-r5K">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="EEr-p5-ZUT" appends="YES" id="mLB-NQ-rl2"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3W-oi-6pn">
+                    <rect key="frame" x="8" y="358" width="304" height="202"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsT-aW-342">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="110"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qYZ-4B-RXA">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="110"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FLm-SE-AsE">
+                                        <rect key="frame" x="0.0" y="15" width="304" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FLm-SE-AsE" secondAttribute="height" multiplier="152:40" id="Vwg-hw-ka6"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="rIV-kV-Upa">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FLm-SE-AsE" firstAttribute="leading" secondItem="qYZ-4B-RXA" secondAttribute="leading" id="4yj-Jb-hv8"/>
+                                    <constraint firstAttribute="bottom" secondItem="FLm-SE-AsE" secondAttribute="bottom" constant="15" id="Er3-Rk-4eI"/>
+                                    <constraint firstAttribute="trailing" secondItem="FLm-SE-AsE" secondAttribute="trailing" id="F4U-CG-pTP"/>
+                                    <constraint firstItem="FLm-SE-AsE" firstAttribute="top" secondItem="qYZ-4B-RXA" secondAttribute="top" constant="15" id="gKs-7T-4iP"/>
+                                </constraints>
+                            </view>
+                            <blurEffect style="light"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </visualEffectView>
+                        <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4c-3T-LIT">
+                            <rect key="frame" x="0.0" y="118" width="304" height="84"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jLM-GW-3RD">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="84"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2t1-gg-o8K">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="84"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2t1-gg-o8K" secondAttribute="bottom" id="8I9-lj-NBe"/>
+                                    <constraint firstItem="2t1-gg-o8K" firstAttribute="leading" secondItem="jLM-GW-3RD" secondAttribute="leading" id="G2j-cz-fMh"/>
+                                    <constraint firstItem="2t1-gg-o8K" firstAttribute="top" secondItem="jLM-GW-3RD" secondAttribute="top" id="HJ1-Ew-iRS"/>
+                                    <constraint firstAttribute="trailing" secondItem="2t1-gg-o8K" secondAttribute="trailing" id="df9-In-9Zd"/>
+                                </constraints>
+                            </view>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="84" id="duU-qn-TLD"/>
+                            </constraints>
+                            <blurEffect style="light"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </visualEffectView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="v4c-3T-LIT" firstAttribute="top" secondItem="DsT-aW-342" secondAttribute="bottom" constant="8" id="5IG-Wh-r08"/>
+                        <constraint firstAttribute="trailing" secondItem="DsT-aW-342" secondAttribute="trailing" id="8LG-NI-9YA"/>
+                        <constraint firstAttribute="bottom" secondItem="v4c-3T-LIT" secondAttribute="bottom" id="Q6i-N0-hKb"/>
+                        <constraint firstItem="v4c-3T-LIT" firstAttribute="leading" secondItem="S3W-oi-6pn" secondAttribute="leading" id="T4f-bT-rM9"/>
+                        <constraint firstItem="DsT-aW-342" firstAttribute="leading" secondItem="S3W-oi-6pn" secondAttribute="leading" id="Woj-7A-ydV"/>
+                        <constraint firstItem="DsT-aW-342" firstAttribute="top" secondItem="S3W-oi-6pn" secondAttribute="top" id="aqO-CW-zeU"/>
+                        <constraint firstAttribute="trailing" secondItem="v4c-3T-LIT" secondAttribute="trailing" id="jFP-0c-LUS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.49249224289999999" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="IN0-V6-r5K" firstAttribute="top" secondItem="naV-F7-MIk" secondAttribute="top" id="58K-NL-yHp"/>
+                <constraint firstAttribute="trailing" secondItem="IN0-V6-r5K" secondAttribute="trailing" id="T3E-C6-jdS"/>
+                <constraint firstItem="S3W-oi-6pn" firstAttribute="bottom" secondItem="naV-F7-MIk" secondAttribute="bottomMargin" id="TsB-Je-cnU"/>
+                <constraint firstItem="IN0-V6-r5K" firstAttribute="leading" secondItem="naV-F7-MIk" secondAttribute="leading" id="c8q-ZC-Fag"/>
+                <constraint firstItem="S3W-oi-6pn" firstAttribute="trailing" secondItem="naV-F7-MIk" secondAttribute="trailingMargin" id="gsY-4j-mAv"/>
+                <constraint firstItem="S3W-oi-6pn" firstAttribute="leading" secondItem="naV-F7-MIk" secondAttribute="leadingMargin" id="nCl-1n-Xoa"/>
+                <constraint firstAttribute="bottom" secondItem="IN0-V6-r5K" secondAttribute="bottom" id="pgH-cn-Y4t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="FLm-SE-AsE" id="SeU-6e-4pQ"/>
+                <outlet property="constrTableViewHeight" destination="duU-qn-TLD" id="3B1-Dx-ZfH"/>
+                <outlet property="constraintContainerBottom" destination="TsB-Je-cnU" id="IPL-ph-dAc"/>
+                <outlet property="tableView" destination="2t1-gg-o8K" id="WpR-cT-LPc"/>
+                <outlet property="viewContainer" destination="S3W-oi-6pn" id="hPf-a6-ghM"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="290"/>
+        </view>
+        <tapGestureRecognizer id="EEr-p5-ZUT">
+            <connections>
+                <action selector="onTapOutside:" destination="naV-F7-MIk" id="dcA-xB-7Zq"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

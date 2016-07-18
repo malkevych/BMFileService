@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E64a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SIApplicationSheetItemCell" id="gTV-IL-0wX" customClass="SIApplicationSheetItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="149"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h59-GO-wYI">
+                        <rect key="frame" x="4" y="0.0" width="117" height="117"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="h59-GO-wYI" secondAttribute="height" multiplier="1:1" id="9dJ-oq-jUg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dropbox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="iWy-8n-Xxm">
+                        <rect key="frame" x="0.0" y="128.5" width="125" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iWy-8n-Xxm" secondAttribute="bottom" id="2OG-xE-brU"/>
+                <constraint firstItem="h59-GO-wYI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="9Wr-r2-eyU"/>
+                <constraint firstAttribute="trailing" secondItem="h59-GO-wYI" secondAttribute="trailing" constant="4" id="GOM-t6-GLb"/>
+                <constraint firstItem="iWy-8n-Xxm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PM3-pF-gqM"/>
+                <constraint firstItem="iWy-8n-Xxm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="h59-GO-wYI" secondAttribute="bottom" id="W2i-hK-G29"/>
+                <constraint firstAttribute="trailing" secondItem="iWy-8n-Xxm" secondAttribute="trailing" id="mX4-ch-pJI"/>
+                <constraint firstItem="h59-GO-wYI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vcO-0J-GXM"/>
+            </constraints>
+            <size key="customSize" width="166" height="167"/>
+            <connections>
+                <outlet property="imgLogo" destination="h59-GO-wYI" id="V6L-iI-glH"/>
+                <outlet property="lblTitle" destination="iWy-8n-Xxm" id="xMB-lT-slL"/>
+            </connections>
+            <point key="canvasLocation" x="318.5" y="348.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
