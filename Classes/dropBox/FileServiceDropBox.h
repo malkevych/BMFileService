@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FileServiceProtocol.h"
 #import "ServiceFilesChooserProtocol.h"
-#import "DropboxSDK.h"
+#import <DropboxSDK/DropboxSDK.h>
 
 @interface FileServiceDropBox : NSObject <FileServiceProtocol, ServiceFilesChooserProtocol, DBRestClientDelegate>
 
