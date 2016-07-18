@@ -107,7 +107,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.frameworks = "DropboxSDK"
+  s.framework = "DropboxSDK"
   # s.framework  = "DropboxSDK"
 
   # s.library   = ""
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   s.dependency "SVProgressHUD"
 
   s.dependency 'Dropbox-iOS-SDK', '~> 1.3.13'
-  #s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13"' }
+  #s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/Pods/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13"' }
 
 
 end
