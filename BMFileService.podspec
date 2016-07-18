@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BMFileService"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "BMFileService implements navigation by clouds file storages, provide protocol to add new services."
 
   # This description is used to generate tags and improve search results.
