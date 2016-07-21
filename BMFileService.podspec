@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BMFileService"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "BMFileService implements navigation by clouds file storages, provide protocol to add new services."
 
   # This description is used to generate tags and improve search results.
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   s.dependency "SVProgressHUD"
 
   s.dependency 'Dropbox-iOS-SDK', '~> 1.3.13'
-  #s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/Pods/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13"' }
+  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/Pods/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13"' }
 
 
 end

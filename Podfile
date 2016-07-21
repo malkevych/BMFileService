@@ -7,8 +7,8 @@ target 'MBFileAttachLib' do
     
     pod 'SVProgressHUD'
     pod 'Masonry'
-    pod 'BMFileService'
-#    pod 'BMFileService', :path => '/Users/oivrafivsdg/Documents/git/MyPods/BMFileService/'
+#    pod 'BMFileService'
+    pod 'BMFileService', :path => '/Users/oivrafivsdg/Documents/git/MyPods/BMFileService/'
 
 end
 
